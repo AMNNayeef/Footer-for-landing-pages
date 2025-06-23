@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: -apply-system, sans-serif;
+}
+
+.sec {
+  background-color: rgb(52, 141, 163);
+  color: white;
+  padding: 80px 40px;
+}
+
+.sec-content {
+  align-items: center;
+  max-width: 1200px;
+  height: auto;
+  margin: 0;
+}
+
+.sec-text {
+  max-width: 600px;
+}
+
+.sec-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.sec-text p {
+  padding: 12px 24px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border: 2px;
+  padding: 12px 24px;
+  font-size: large;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: azure;
+  color: black;
+  box-shadow: 5px;
+}
+
+.footer-panel {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 60px 40px 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.site-name {
+  display: flex;
+  flex-direction: wrap;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.site-name .bar {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: white;
+  margin-right: 15px;
+}
+
+.footer-col p {
+  color: whitesmoke;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: rgb(26, 40, 158);
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icons a {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.icons a:hover {
+  color: silver;
+}
+
+/*  Responsive adjustments  */
+
+/*Section*/
+@media (max-width: 768px) {
+  .sec-content {
+    text-align: center;
+  }
+
+  .sec-text {
+    margin-bottom: 40px;
+  }
+}
+
+/*Footer*/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footer-col {
+    margin-bottom: 30px;
+  }
+}
